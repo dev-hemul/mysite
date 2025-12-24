@@ -327,6 +327,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
   let slideIndex = 1;
 
+
+
+  // Простой слайдер
+  /*
   showSlides(slideIndex);
 
   if (slides.length < 10) {
@@ -361,4 +365,4 @@ window.addEventListener('DOMContentLoaded', function () {
 
   prev.addEventListener('click', () => plusSlides(-1));
   next.addEventListener('click', () => plusSlides(1));
-});
+});*/
