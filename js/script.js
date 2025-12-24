@@ -323,9 +323,14 @@ window.addEventListener('DOMContentLoaded', function () {
     prev = document.querySelector('.offer__slider-prev'),
     next = document.querySelector('.offer__slider-next'),
     total = document.querySelector('#total'),
-    current = document.querySelector('#current');
+    current = document.querySelector('#current'),
+    slidesWrapper = document.querySelector('.offer__slider-wrapper'),
+    slidesField = document.querySelector('.offer__slider-inner'),
+    width = window.getComputedStyle(slidesWrapper).width;
 
   let slideIndex = 1;
+  slidesField.style.width = 100 * slides.length + '%';
+  slides.forEach(slide => slide.style.width = width);
 
 
 
@@ -365,4 +370,5 @@ window.addEventListener('DOMContentLoaded', function () {
 
   prev.addEventListener('click', () => plusSlides(-1));
   next.addEventListener('click', () => plusSlides(1));
-});*/
+  */
+});
